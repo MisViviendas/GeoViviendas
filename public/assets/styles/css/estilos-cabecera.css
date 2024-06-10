@@ -1,0 +1,31 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+#cabecera{
+    background-color: #F0EA5F;
+    height: 141px;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    font-family: Jost, sans-serif;
+    font-weight: 700;
+    clear: both;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    float: left;
+    padding-right: 10px;
+
+}
+#tituloGeo{
+    margin: 0;
+    color: #0A663A;
+}

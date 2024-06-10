@@ -1,0 +1,25 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Ajusta según sea necesario */
+    left: 50%; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: #0A663A;    
+    background-color: none; /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    text-align: center; /* Opcional: centra el texto */
+    font-size: 4vw; /* Ajusta según sea necesario */
+}
+
+#geoViviendaFondo{
+    background-color: none;
+    font-family: Jost, sans-serif;
+    font-weight: 700;   
+}

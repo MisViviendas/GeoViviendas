@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/css/estilos-cabecera.css">
+    <link rel="stylesheet" href="../assets/styles/css/estilos-toolbar.css">
+    <link rel="stylesheet" href="../assets/styles/css/estilos-imagen.css">
+    <link rel="stylesheet" href="../assets/styles/css/estilos-footer.css">
+    <link rel="stylesheet" href="../assets/styles/css/estilos-main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="cabecera">
+            <p id="logo"><img src="./assets/images/LogoGeo.png" title="GeoViviendaLogo" width="88x113"></p>
+            <p id="tituloGeo">GeoViviendas</p>
+        </div>
+        <nav id="navbar">
+            <div id="buttonSlide">
+                <button class="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div id="toolbar">
+                <a href="./register.html" id="signup">Sign up</a>
+                <a href="#" id="login">Log in</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container-main">
+        <section>
+            <div>
+                <img src="../assets/images/fondo.png" width="100%">
+                <div>
+                    <form class="formDatosRegistro">
+                        <section class="areaDatos">
+                            <div id="tituloRegistro">Registro de Usuario</div>
+                            <div class="lineaDatos">
+                                <label class="labels">Nombres Completos</label>
+                                <input type="text" class="inputs" id="nombres" >
+                            </div>
+                            
+                            <div class="lineaDatos">
+                                <label class="labels">Apellidos completos</label>
+                                <input type="text" class="inputs" id="apellidos" >
+                            </div>
+                            
+                            <div class="lineaDatos">
+                                <label class="labels">Fecha de Nacimiento</label>
+                                <input type="text" class="inputs" id="fechaNacimiento" >
+                            </div>
+                            
+                            <div class="lineaDatos">
+                                <label class="labels">Correo Electronico</label>
+                                <input type="text" class="inputs" id="correo" >
+                            </div>
+                            
+                            <div class="lineaDatos">
+                                <label class="labels">Contraseña</label>
+                                <input type="password" class="inputs" id="Contraseña" >
+                            </div>
+                            
+                            <div class="lineaDatos">
+                                <label class="labels">Confirmar Contraseña</label>
+                                <input type="password" class="inputs" id="ConfirmarContraseña" >
+                            </div>
+                            
+                            <div class="lineaDatos">
+                                <label class="labels">Número de Celular</label>
+                                <input type="number" class="inputs" id="celular" >
+                            </div>
+                            <button type="button" onclick="window.location.href='register.html'" class="botonesCR" id="btnCancelar">Cancelar</button>
+
+                            <button type="button" class="botonesCR" id="btnRegistrar">Registrar</button>
+                        </section>
+                    
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="piePagina">
+        <section id="TitleContact">
+            <p>Contactanos:</p>
+        </section>
+        <section id="TelefGmail">
+            <div class="telef">
+                <p class="infoTelef">+51 945256584</p>
+                <img src="../assets/images/telefono.png" alt="gmail" width="10%">
+            </div>
+            <div class="mail">
+                <p class="infoGmail">abcd@gmail.com</p>
+                <img src="../assets/images/gmail.png" alt="gmail" width="30px" height="25px">
+            </div>
+
+            
+        </section>
+        <section class="redes-footer">
+            <div id="ig">
+                <p class="info-ig">@geoV</p>
+                <img src="../assets/images/telefono.png" alt="gmail" width="10%">
+            </div>
+            <div id="fb">
+                <p class="info-ig">geoVivi</p>
+                <img src="../assets/images/telefono.png" alt="gmail" width="10%">
+            </div>
+        </section>
+        <section class="tituloFooter">
+            <p id="logoF"><img src="../assets/images/LogoGeo.png" title="GeoViviendaLogo" width="95x122"></p>
+            <p id="tituloF">GeoViviendas</p>
+        </section>
+    </footer>
+    <script src="../js/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    clear: both;
+}
+
+.piePagina{
+    background-color: #5F9572;
+    height: 120px;
+    display: flex;  
+}
+
+#TitleContact{
+    
+    float: left;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 40px;
+    margin: 0 10px;
+}
+
+#TelefGmail{
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 50px 20px;
+    text-align: left;
+    display: block;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+}
+.telef{
+    width: 250px;
+}
+.mail{
+    width: 250px;
+}
+.infoTelef {
+    display: inline-block;
+    margin: 3px 0px;
+    width: 180px;
+}
+
+.infoGmail {
+    display: inline-block;
+    width: 180px;
+    
+}
+
+.redes-footer{
+    padding: 50px 0;
+    font-size: 20px;
+    margin: 0 20px;
+    float: left;
+    font-weight: 700;
+    margin-top: 0;
+    position: relative;
+    bottom: 10px;
+}
+
+#ig{
+    width: 250px;
+    text-align: left;
+}
+
+.info-ig{
+    display: inline-block;
+    margin: 3px 0px;
+    width: 80px;
+}
+
+#fb{
+    width: 250px;
+}
+
+#logoF{
+    display: inline-block;
+}
+
+#tituloF{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    font-family: Jost, sans-serif;
+    font-weight: 700;
+    color: #0A663A;
+    padding-top: 50px;
+    background-color: #F0EA5F;
+
+}
+
+.tituloFooter{
+    position: relative;
+    right: 0px;
+    padding: 0 0px;
+    display: flex;
+    clear: both;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto;
+}
+
