@@ -22,28 +22,35 @@
             <a href="../pagesHTML/indexSesionIni.html"><p id="logo"><img src="../assets/images/LogoGeo.png" title="GeoViviendaLogo" width="88x113"></p></a>
             <p id="tituloGeo">GeoViviendas</p>
         </div>
-        <div id="buttonSlide">
-            <button class="button" onclick="toggleSidebar()">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <div class="sidebar" id="sidebar">
-            <button class="closebtn" onclick="toggleSidebar()">&#9776;</button>
-            <input type="text" placeholder="Buscar...">
-            <nav>
-                <ul>
-                    <li><a href="../pagesHTML/SeleccionarZona.html">Seleccionar Zona</a></li>
-                    <li><a href="../pagesHTML/SeleccionarPlano.html">Elegir Tipo Plano</a></li>
-                    <li><a href="#">Favoritos</a></li>
-                    <li><a href="../pagesHTML/publicarInmueble.html">Publicar Inmueble</a></li>
-                    <li><a href="#">Historial de inmuebles</a></li>
-                    <li><a href="../pagesHTML/editarPerfil.html">Configuración</a></li>
-                </ul>
-            </nav>
-        </div>
+       <nav id="navbar">
+            <div id="buttonSlide">
+                <button class="button" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <button class="closebtn" onclick="toggleSidebar()">&#9776;</button>
+                <input type="text" placeholder="Buscar...">
+                <nav>
+                    <ul>
+                        <li><a href="../pagesHTML/SeleccionarZona.html">Seleccionar Zona</a></li>
+                        <li><a href="../pagesHTML/SeleccionarPlano.html">Elegir Tipo Plano</a></li>
+                        <li><a href="#">Favoritos</a></li>
+                        <li><a href="../pagesHTML/publicarInmueble.html">Publicar Inmueble</a></li>
+                        <li><a href="#">Historial de inmuebles</a></li>
+                        <li><a href="../pagesHTML/editarPerfil.html">Configuración</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div id="toolbar">
+                <a href="pruebaRedi.html" id="login">Cassandra Fernandez</a>
+                <img src="../assets/images/user.jpg" alt="Imagen de portada" class="avatar">
+            </div>
+        </nav>
     </header>
     <main class="fondoMain">
         <div class="edit-profile-container">
