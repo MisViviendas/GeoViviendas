@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoViviendas</title>
+    <link rel="stylesheet" href="../css/estilos-cabecera.css">
+    <link rel="stylesheet" href="../css/estilos-toolbar.css">
+    <link rel="stylesheet" href="../css/estilos-imagen.css">
+    <link rel="stylesheet" href="../css/estilos-footer.css">
+    <link rel="stylesheet" href="../css/estilos-busqueda.css">
+    <link rel="stylesheet" href="../css/estilos-slidebar.css">
+    <link rel="stylesheet" href="../css/estilos-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Jost:wght@100;400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div id="cabecera">
+            <a href="../pagesHTML/indexSesionIni.html"><p id="logo"><img src="../img/LogoGeo.png" title="GeoViviendaLogo" width="88x113"></p></a>
+            <p id="tituloGeo">GeoViviendas</p>
+        </div>
+        <nav id="navbar">
+            <div id="buttonSlide">
+                <button class="button" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <button class="closebtn" onclick="toggleSidebar()">&#9776;</button>
+                <input type="text" placeholder="Buscar...">
+                <nav>
+                    <ul>
+                        <li><a href="../pagesHTML/SeleccionarZona.html">Seleccionar Zona</a></li>
+                        <li><a href="../pagesHTML/SeleccionarPlano.html">Elegir Tipo Plano</a></li>
+                        <li><a href="#">Favoritos</a></li>
+                        <li><a href="../pagesHTML/publicarInmueble.html">Publicar Inmueble</a></li>
+                        <li><a href="#">Historial de inmuebles</a></li>
+                        <li><a href="../pagesHTML/editarPerfil.html">Configuración</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="toolbar">
+                <a href="pruebaRedi.html" id="login">Cassandra Fernandez</a>
+                <img src="../img/user.jpg" alt="Imagen de portada" class="avatar">
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <section class="fondoMain">
+        <div class="search-bar-container">
+            <form class="search-bar-form">
+                <div class="select-container">
+                    <select name="region" id="region">
+                        <option value="">Región</option>
+                        <!-- Agrega las opciones correspondientes -->
+                    </select>
+                </div>
+                <div class="select-container">
+                    <select name="ciudad" id="ciudad">
+                        <option value="">Ciudad</option>
+                        <!-- Agrega las opciones c
+                        -orrespondientes -->
+                    </select>
+                </div>
+                <div class="select-container">
+                    <select name="tipo" id="tipo">
+                        <option value="">Tipo</option>
+                        <!-- Agrega las opciones correspondientes -->
+                    </select>
+                </div>
+                <button type="submit" class="search-button">
+                    <img src="../img/lupa.png" alt="Buscar">
+                </button>
+            </form>
+        </div>  
+    </section>
+
+    
+
+
+
+    <footer class="piePagina">
+        <section id="TitleContact">
+            <p>Contactanos:</p>
+        </section>
+        <section id="TelefGmail">
+            <div class="telef">
+                <img src="../img/wsspLogo.png" alt="gmail" width="10%">
+                <p class="infoTelef">+51 945256584</p>
+                
+            </div>
+            <div class="mail">
+                <img src="../img/gmailLogo.png" alt="gmail" width="30px" height="25px">
+                <p class="infoGmail">abcd@gmail.com</p>
+                
+            </div>
+
+            
+        </section>
+        <section class="redes-footer">
+            <div id="ig">
+                <img src="../img/twitterLogo.png" alt="gmail" width="12%">
+                <p class="info-ig">@geoV</p>
+                
+            </div>
+            <div id="fb">
+                <img src="../img/paginaLogo.png" alt="gmail" width="10%">
+                <p class="info-ig">geoVivi</p>
+                
+            </div>
+        </section>
+        <section class="tituloFooter">
+            <p id="logoF"><img src="../img/LogoGeo2.png" title="GeoViviendaLogo" width="95x122"></p>
+            <p id="tituloF">GeoViviendas</p>
+        </section>
+    </footer>
+
+    <style>
+        body {
+            font-family: 'Jost', sans-serif;
+        }
+    </style>
+
+    <script src="../js/funciones.js"></script>
+</body>
+</html>

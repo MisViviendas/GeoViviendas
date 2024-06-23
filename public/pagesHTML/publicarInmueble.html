@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-cabecera.css">
+    <link rel="stylesheet" href="../css/estilos-toolbar.css">
+    <link rel="stylesheet" href="../css/estilos-imagen.css">
+    <link rel="stylesheet" href="../css/estilos-footer.css">
+    <link rel="stylesheet" href="../css/estilos-main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body class="bodyPubli">
+    <header>
+        <div id="cabecera">
+            <a href="../pagesHTML/indexSesionIni.html"><p id="logo"><img src="../img/LogoGeo.png" title="GeoViviendaLogo" width="88x113"></p></a>
+            <p id="tituloGeo">GeoViviendas</p>
+        </div>
+        <nav id="navbar">
+            <div id="buttonSlide">
+                <button class="button" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <button class="closebtn" onclick="toggleSidebar()">&#9776;</button>
+                <input type="text" placeholder="Buscar...">
+                <nav>
+                    <ul>
+                        <li><a href="../pagesHTML/SeleccionarZona.html">Seleccionar Zona</a></li>
+                        <li><a href="../pagesHTML/SeleccionarPlano.html">Elegir Tipo Plano</a></li>
+                        <li><a href="#">Favoritos</a></li>
+                        <li><a href="../pagesHTML/publicarInmueble.html">Publicar Inmueble</a></li>
+                        <li><a href="#">Historial de inmuebles</a></li>
+                        <li><a href="../pagesHTML/editarPerfil.html">Configuración</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container-main">
+        <section class="fondoMain">
+            <section id="formPublicarInmueble">
+                <h2 id="TituloFormPub">Publicar Inmueble</h2>
+                <section class="sectionLinea">
+                    <form id="formDerPub">
+                        <ul>
+                            <li class="tamUlForm">
+                                Informacion Basica del Inmueble
+                                <ul class="sinEstiloUl">
+                                    <li class="pubsIng">
+                                        <label class="labelsPub">Tipo de Inmueble</label>
+                                        <select class="comboBoxPub">
+                                            <option>Seleccionar</option>
+                                            <option>b</option>
+                                        </select>
+                                    </li>
+                                    <li class="pubsIng">
+                                        <label class="labelsPub">Direccion del Inmueble</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li>
+                                    <li class="pubsIng">
+                                        <label class="labelsPub">Tamaño del Inmueble</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tamUlForm">
+                                Caracteristicas del Inmueble
+                                <ul class="sinEstiloUl">
+                                    <li class="pubsIng">
+                                        <label class="labelsPub">Estado del Inmueble</label>
+                                        <select class="comboBoxPub">
+                                            <option>Seleccionar</option>
+                                            <option>b</option>
+                                        </select>
+                                    </li>
+                                    <li class="pubsIng">
+                                        
+                                        <label class="labelsPub">Numero de Habitaciones</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li >
+                                    <li class="pubsIng">
+                                        
+                                        <label class="labelsPub">Numero de Baños</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li>
+                                    <li class="pubsIng">
+                                        
+                                        <label class="labelsPub">Descripcion de los Espacios Interiores</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li>
+                                    <li class="pubsIng">
+                                        
+                                        <label class="labelsPub">Subir Plano del Inmueble</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tamUlForm">
+                                Informacion de la zona
+                                <ul class="sinEstiloUl">
+                                    <li class="pubsIng">
+                                        <label class="labelsPub">Descripcion del Entorno</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li>
+                                    <li class="pubsIng">
+                                        
+                                        <label class="labelsPub">Atractivos Cercanos</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li >
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                    
+                    <form id="formIzqPub">
+                        <ul>
+                            <li class="tamUlForm">
+                                Precio del Inmueble
+                                <ul class="sinEstiloUl"> 
+                                    
+                                    <li class="pubsIng">
+                                        
+                                        <label class="labelsPub">Precio</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li >
+                                    <li class="pubsIng">
+                                        
+                                        <label class="labelsPub">Posibilidad de negociación</label>
+                                        <select class="comboBoxPub">
+                                            <option>Seleccionar</option>
+                                            <option>b</option>
+                                        </select>
+                                    </li >
+                                </ul>
+                            </li>
+                            <li class="tamUlForm">
+                                Fotos del Inmueble
+                                <ul class="fotosInmuebleList">
+                                    <li class="fotoInmuebleItem">
+                                        <div class="fotoPlaceholder">
+                                            <span class="plusIcon">+</span>
+                                        </div>
+                                    </li>
+                                    <li class="fotoInmuebleItem">
+                                        <div class="fotoPlaceholder">
+                                            <span class="plusIcon">+</span>
+                                        </div>
+                                    </li>
+                                    <li class="fotoInmuebleItem">
+                                        <div class="fotoPlaceholder">
+                                            <span class="plusIcon">+</span>
+                                        </div>
+                                    </li>
+                                    <li class="fotoInmuebleItem">
+                                        <div class="fotoPlaceholder">
+                                            <span class="plusIcon">+</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tamUlForm">
+                                Contacto
+                                <ul class="sinEstiloUl">
+                                    <li class="pubsIng">
+                                        <label class="labelsPub">Datos de Contacto</label>
+                                        <input type="text" class="inputPub" id="apellidos" >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="form-group">
+                            <button type="submit" class="btn-publicar" onclick="window.location.href='indexSesionini.html'; alert('Vivienda Publicada'); ">Publicar</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="piePagina">
+        <section id="TitleContact">
+            <p>Contactanos:</p>
+        </section>
+        <section id="TelefGmail">
+            <div class="telef">
+                <img src="../img/wsspLogo.png" alt="gmail" width="10%">
+                <p class="infoTelef">+51 945256584</p>
+                
+            </div>
+            <div class="mail">
+                <img src="../img/gmailLogo.png" alt="gmail" width="30px" height="25px">
+                <p class="infoGmail">abcd@gmail.com</p>
+                
+            </div>
+
+            
+        </section>
+        <section class="redes-footer">
+            <div id="ig">
+                <img src="../img/twitterLogo.png" alt="gmail" width="12%">
+                <p class="info-ig">@geoV</p>
+                
+            </div>
+            <div id="fb">
+                <img src="../img/paginaLogo.png" alt="gmail" width="10%">
+                <p class="info-ig">geoVivi</p>
+                
+            </div>
+        </section>
+        <section class="tituloFooter">
+            <p id="logoF"><img src="../img/LogoGeo2.png" title="GeoViviendaLogo" width="95x122"></p>
+            <p id="tituloF">GeoViviendas</p>
+        </section>
+    </footer>
+    <script src="../js/funciones.js"></script>
+</body>
+</html>

@@ -154,3 +154,496 @@
 #btnRegistrar{
     background: linear-gradient(90deg, #0C7E48 0%, #16E482 100%);
 }
+
+.barraBusqueda{
+    position: absolute;
+    top: 5vw; /* Ajusta según sea necesario */
+    left: 10vw; /* Ajusta según sea necesario */
+    border: 2px solid black;
+    width: 80vw;
+    height: 3.81171875vw;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    background-color: rgba(10, 102, 58, 0.28);
+    
+}
+
+#buttonRegion{
+    border: 2px solid black;
+    display: inline-block;
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+    height: 3.8109375vw;
+    width: 7.905729166666667vw;
+    color: #0A663A;
+    font-family: Cabin, sans serif;
+    font-size: 1.5625vw;
+}
+
+#buttonCiudad{
+    border: 2px solid black;
+    display: inline-block;
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+    height: 3.8109375vw;
+    width: 7.905729166666667vw;
+    color: #0A663A;
+    font-family: Cabin, sans serif;
+    font-size: 1.5625vw;
+}
+
+#buttonTipo{
+    border: 2px solid black;
+    display: inline-block;
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+    height: 3.8109375vw;
+    width: 7.905729166666667vw;
+    color: #0A663A;
+    font-family: Cabin, sans serif;
+    font-size: 1.5625vw;
+}
+
+#formPublicarInmueble{
+    position: absolute;
+    text-align: center;
+    border: 2px solid black;
+    width: 87.969%;
+    height: 53.5%;
+    margin-left: 6.40625vw;
+    margin-top: 18.1640625vw;
+    background-color: rgba(255, 255, 255, 0.41);
+    padding-top: 1.5vw;
+    padding-bottom: 1vw;
+    
+}
+
+#TituloFormPub{
+    font-size: 2.5vw;
+    padding-bottom: 1.5vw;
+}
+
+#formDerPub{
+    border-right: 2px solid black;
+    margin-left: 3.125vw;
+    width: 40.46875vw;
+    height: 35.15625vw;
+}
+
+#formIzqPub{
+    
+    width: 40.46875vw;
+    height: 35.15625vw;
+}
+
+.sectionLinea{
+    display: flex;
+    
+    align-items: center;
+}
+
+.tamUlForm{
+    width: 24.375vw;
+    font-size: 1.5625vw;
+    font-family: Cabin, sans-serif;
+    text-align: left;
+}
+.sinEstiloUl{
+    list-style-type: none;
+    text-align: left;
+        padding: 0 0 0 1.5vw;
+}
+
+.comboBoxPub{
+    font-size: 1.5625vw;
+    font-weight: 700;
+    text-align: center;
+    font-family: Jost, sans-serif;
+    min-width: 16.875vw;
+}
+
+.labelsPub{
+    margin-right: 10px; /* Espacio entre el label y el input */
+    min-width: 19.53125vw; /* Ancho mínimo para los labels, ajusta según tus necesidades */
+}
+.inputPub{
+    flex: 1; /* Hace que el input ocupe el espacio restante */
+    padding: 0.4vw; /* Espacio interno para el input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 4px; /* Bordes redondeados */
+    min-width: 16.875vw;
+}
+
+.pubsIng{
+    display: flex;
+    align-items: center; /* Alinea verticalmente el label y el input */
+    margin-bottom: 0.5vw; /* Espacio inferior entre elementos de la lista */
+}
+
+#formIzqPub .tamUlForm{
+    margin-left: 3.90625vw;
+}
+
+#formFotosInmueble {
+    background-color: #fff;
+    padding: 1.5625vw;
+    border-radius: 0.78125vw;
+    box-shadow: 0 0 0.78125vw rgba(0, 0, 0, 0.1);
+}
+
+.fotosInmuebleList {
+    list-style-type: none; /* Quita las viñetas */
+    padding: 0;
+    display: flex; /* Display flex para alinear los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.fotoInmuebleItem {
+    flex: 1; /* Permite que los elementos crezcan para llenar el espacio disponible */
+}
+
+.fotoPlaceholder {
+    width: 7.8125vw; /* Ancho fijo para cada contenedor de imagen */
+    height: 11.71875vw; /* Alto fijo para cada contenedor de imagen */
+    background-color: #fff;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.plusIcon {
+    font-size: 2vw;
+    color: #000;
+}
+
+.form-group {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    margin-top: 4.5625vw; /* Margen superior para separar del contenido anterior */
+}
+
+.btn-publicar {
+    background-color: #28a745; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 0.78125vw 1.5625vw; /* Espaciado interno del botón */
+    border: none; /* Quitar el borde predeterminado */
+    border-radius: 0.390625vw; /* Bordes redondeados */
+    font-size: 1.25vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.btn-publicar:hover {
+    background-color: #218838; /* Color de fondo al pasar el mouse sobre el botón */
+}
+
+/* Contenedor del formulario de inicio de sesión */
+.edit-profile-container {
+    position: absolute;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10vw;
+    margin-left: 32vw;
+}
+
+/* Encabezado */
+.edit-profile-container h1 {
+    color: #006400; /* Verde oscuro */
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px; /* Tamaño de fuente */
+    font-style: 'Jost', sans-serif;
+}
+
+/* Formulario */
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: center; /* Cambia la dirección a columna */
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    color:  #000; /* Color blanco para las etiquetas */
+    margin-bottom: 20px; /* Espacio entre la etiqueta y el campo */
+    font-weight: bold; /* Negrita */
+    font-size: 20px; /* Tamaño de fuente */
+    width: 35%; /* Ancho completo */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    border: none; /* Sin borde */
+    border-radius: 4px;
+    background-color: #e0ffd4; /* Fondo verde claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #008000; /* Borde verde oscuro */
+}
+
+/* Botones */
+.form-group button {
+    width: 45%; /* Ancho del 45% */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Botón 'Volver' */
+.form-group .volver {
+    background-color: #28a745; /* Verde */
+}
+
+.form-group .volver:hover {
+    background-color: #218838; /* Verde oscuro */
+}
+
+/* Botón 'Iniciar Sesión' */
+.form-group .iniciar-sesion {
+    background-color: #28a745; /* Azul */
+}
+
+.form-group .iniciar-sesion:hover {
+    background-color: #218838; /* Azul oscuro */
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre botones */
+}
+
+.search-bar-container {
+    background-color: #d9f2d9; /* Fondo de la barra */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Espaciado superior e inferior */
+    max-width: 800px; /* Ancho máximo */
+}
+
+.search-bar-form {
+    display: flex;
+    align-items: center;
+    
+}
+
+.select-container {
+    margin-right: 95px;
+}
+
+.espacionoma-container {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 400px;
+    border-radius: 10px;
+    width: 100%;
+}
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #008000; /* Verde */
+    font-weight: bold;
+    appearance: none; /* Oculta la flecha por defecto */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="%23008000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+    width: 150px; /* Ajusta el ancho según sea necesario */
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.seccionBusqZona{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8  );
+    margin: 20% 21.875vw 4.140625vw 25%;
+    width: 56.25vw;
+    height: 36.5625vw;
+}
+
+#tituloMapaZ{
+    text-align: center;
+    font-family: Cabin, sans-serif;
+    font-size: 1.5625vw;
+    font-weight: 700;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+#mapaImagenZ{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.botonesZ{
+    width: 100%;
+    padding-left: 30%;
+}
+
+#btnCancelarSelec{
+
+    margin-top: 0.5vw;
+    width: 20%;
+    height: 2vw;
+    background-color: #C63617;
+    border-radius: 10%;
+    border: 0px;
+    margin-right: 1vw;
+}
+
+#btnSeleccionar{
+    width: 20%;
+    height: 2vw;
+    background-color: #6BF13B;
+    border-radius: 10%;
+    border: 0px;
+    margin-left: 1vw;
+}
+
+.botonesZp2{
+    width: 100%;
+    padding-left: 10%;
+}
+
+header, nav, section {
+    width: 100%;
+}
+
+
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-container a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.login-container a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.login-container a:hover::after {
+    width: 100%;
+}
+
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.edit-profile-container {
+    background-color: rgba(255, 255, 255, 0.482);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.edit-profile-container h1 {
+    margin-bottom: 20px;
+}
+
+.edit-profile-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.edit-profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-profile-form input[type="text"],
+.edit-profile-form input[type="email"],
+.edit-profile-form input[type="password"],
+.edit-profile-form input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #14CC74;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0A663A;
+}
+

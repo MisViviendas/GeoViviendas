@@ -3,22 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoViviendas</title>
     <link rel="stylesheet" href="../css/estilos-cabecera.css">
     <link rel="stylesheet" href="../css/estilos-toolbar.css">
     <link rel="stylesheet" href="../css/estilos-imagen.css">
     <link rel="stylesheet" href="../css/estilos-footer.css">
     <link rel="stylesheet" href="../css/estilos-main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Jost:wght@100;400&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -36,29 +28,36 @@
                 </button>
             </div>
             <div id="toolbar">
-                <a href="#" id="signup">Sign up</a>
-                <a href="#" id="login">Log in</a>
+                <a href="pagesHTML/register.html" id="signup">Sign up</a>
+                <a href="pagesHTML/inicioSesion.html" id = "login">Log in</a>
             </div>
         </nav>
     </header>
     
-    <main class="container-main">
-        <section class="fondoMain">
-            <div>
-                
-                <div>
-                    <form class="formularioRegister">
-                        <button id="btnGoogle" type="button">REGISTRARSE CON GOOGLE</button>
-                        <p class="fottbtn"></p>
-                        <button id="btnCorreo" type="button">REGISTRARSE CON CORREO</button>
-                        <p class="fottbtn"></p>
-                        <button id="btnRegister" type="button" onclick="window.location.href='formRegistro.html'">REGISTRARSE LOCALMENTE</button>
-                        <p class="fottbtn"></p>
-                    </form>
+
+    <section class="fondoMain">
+        <div class="edit-profile-container">
+            <h1>INICIO DE SESIÓN</h1>
+            <form class="edit-profile-form">
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario">
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena">
+                </div>
+                <div class="form-group button-container">
+                    <button type="button" class="volver" onclick="window.location.href='../index.html'">Volver</button>
+                    <button type="button" class="iniciar-sesion" onclick="window.location.href='indexSesionIni.html'">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+
+
     <footer class="piePagina">
         <section id="TitleContact">
             <p>Contactanos:</p>
@@ -94,6 +93,10 @@
             <p id="tituloF">GeoViviendas</p>
         </section>
     </footer>
-    <script src="../js/funciones.js"></script>
+    <style>
+        body {
+            font-family: 'Jost', sans-serif;
+        }
+    </style>
 </body>
 </html>

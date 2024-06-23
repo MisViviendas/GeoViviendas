@@ -3,62 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoViviendas</title>
     <link rel="stylesheet" href="../css/estilos-cabecera.css">
     <link rel="stylesheet" href="../css/estilos-toolbar.css">
     <link rel="stylesheet" href="../css/estilos-imagen.css">
     <link rel="stylesheet" href="../css/estilos-footer.css">
-    <link rel="stylesheet" href="../css/estilos-main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    
 </head>
-<body>
+<body class="fondoBodyBuscar">
     <header>
         <div id="cabecera">
-            <a href="../index.html"><p id="logo"><img src="../img/LogoGeo.png" title="GeoViviendaLogo" width="88x113"></p></a>
+            <a href="../pagesHTML/indexSesionIni.html"><p id="logo"><img src="../img/LogoGeo.png" title="GeoViviendaLogo" width="88x113"></p></a>
             <p id="tituloGeo">GeoViviendas</p>
         </div>
-        <nav id="navbar">
-            <div id="buttonSlide">
-                <button class="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <div id="toolbar">
-                <a href="#" id="signup">Sign up</a>
-                <a href="#" id="login">Log in</a>
-            </div>
-        </nav>
     </header>
-    
-    <main class="container-main">
-        <section class="fondoMain">
-            <div>
-                
-                <div>
-                    <form class="formularioRegister">
-                        <button id="btnGoogle" type="button">REGISTRARSE CON GOOGLE</button>
-                        <p class="fottbtn"></p>
-                        <button id="btnCorreo" type="button">REGISTRARSE CON CORREO</button>
-                        <p class="fottbtn"></p>
-                        <button id="btnRegister" type="button" onclick="window.location.href='formRegistro.html'">REGISTRARSE LOCALMENTE</button>
-                        <p class="fottbtn"></p>
-                    </form>
-                </div>
+
+    <nav id="navbar">
+        <div id="buttonSlide">
+            <button class="button" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <button class="closebtn" onclick="toggleSidebar()">&#9776;</button>
+            <input type="text" placeholder="Buscar...">
+            <nav>
+                <ul>
+                    <li><a href="../pagesHTML/SeleccionarZona.html">Seleccionar Zona</a></li>
+                    <li><a href="../pagesHTML/SeleccionarPlano.html">Elegir Tipo Plano</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="../pagesHTML/publicarInmueble.html">Publicar Inmueble</a></li>
+                    <li><a href="#">Historial de inmuebles</a></li>
+                    <li><a href="../pagesHTML/editarPerfil.html">Configuración</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+    <section>
+        <div class="content-section">
+            <img src="../img/casa1.png" alt="Sample Image 1">
+            <div class="text-container">
+                <p>Casa de dos pisos con piscina en San Borja</p>
+                <p class="underline">Servicios</p>
+                <p class="underline">Precio</p>
+                <button class="more-info">Más Info<span>+</span></button>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="content-section">
+            <img src="../img/casa2.png" alt="Sample Image 2">
+            <div class="text-container">
+                <p>Casa de dos pisos con piscina en San Borja</p>
+                <p class="underline">Servicios</p>
+                <p class="underline">Precio</p>
+                <button class="more-info">Más Info<span>+</span></button>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="piePagina">
         <section id="TitleContact">
             <p>Contactanos:</p>
@@ -94,6 +106,5 @@
             <p id="tituloF">GeoViviendas</p>
         </section>
     </footer>
-    <script src="../js/funciones.js"></script>
 </body>
 </html>
